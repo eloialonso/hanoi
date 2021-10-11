@@ -44,7 +44,7 @@ def hanoi(n, start, aux, end, print_fn):
         return
     hanoi(n - 1, start, end, aux, print_fn)
     print_fn(start, end)
-    hanoi(n - 1, aux, end, start, print_fn)
+    hanoi(n - 1, aux, start, end, print_fn)
 
 
 def print_instruction(start, end, wait=True, language="en"):
